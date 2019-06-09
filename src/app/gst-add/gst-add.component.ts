@@ -10,7 +10,7 @@ import { BusinessService } from '../business.service';
 @Component({
   selector: 'app-gst-add',
   templateUrl: './gst-add.component.html',
-  styleUrls: ['./gst-add.component.css']
+  styleUrls: ['./gst-add.component.ts']
 })
 export class GstAddComponent implements OnInit {
   dataadded = false;

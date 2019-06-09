@@ -15,19 +15,19 @@
       </div>
 
       <div class="form-group">
-        <label class="col-md-4">Business Name </label>
+        <label class="col-md-4">project Name </label>
         <input type="text" class="form-control" formControlName="business_name" #business_name />
       </div>
 
       <div *ngIf="gst_addForm.controls['business_name'].invalid && (gst_addForm.controls['business_name'].dirty || gst_addForm.controls['business_name'].touched)"
         class="alert alert-danger">
         <div *ngIf="gst_addForm.controls['business_name'].errors.required">
-          Please enter the business name
+          Please enter the project name
         </div>
       </div>
 
       <div class="form-group">
-        <label class="col-md-4">Business GST Number </label>
+        <label class="col-md-4">project </label>
         <input type="text" class="form-control" formControlName="business_gst_number" minlength="8"
           #business_gst_number />
       </div>
@@ -50,4 +50,4 @@
   </div>
 </div>
 
-<p  *ngIf="dataadded" class="alert alert-success">{{ msg }}</p>
+<p  *ngIf="dataadded" class="alert alert-success">{{ msg }}</p> 
